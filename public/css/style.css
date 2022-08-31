@@ -1,406 +1,558 @@
 *{
-    margin: 0;
-    padding: 0;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Roboto';
-    background-color: #EAC926;
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  }
+
+header {
+  background-color: #EAC926;
+  padding-top:2em;
+  padding-bottom: 2em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1em;
+}
+
+header div#header-logo {
+  flex-basis: 34%;
+  flex-grow: 1;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header div#header-logo img {
+  max-width: 75%;
+}
+
+header div#search-bar {
+  flex-basis: 34%;
+  flex-grow: 1;
+  background-color: #FFFFFF;
+  border-radius: 5%;
+  display: flex;
+  margin: 0 1em;
+}
+
+header form {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-basis: 34%;
+  flex-grow: 1;
+  width: 100%;
+  background-color: white;
+  border-style: none;
+  border-radius: 1em;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+header form input {
+  min-width: 0;
+  width: 1%;
+  flex: 1 1 auto;
+  background-color: rgba(255,255,255,0);
+  border-style: none;
+  }
+
+header form button {
+  background-color: rgba(255,255,255,0);
+  border-style: none;
+  margin-right: 0.5em;
+}
+
+header form button i {
+  color: lightgray;
+}
+
+header div#cuotas {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  flex-grow: 1;
+  flex-basis: 51%;
+  text-align: center;
+  align-items: center;
+}
+
+header nav {
+  display: none;
+}
+
+header nav ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header p#cuotas {
+  flex-basis: 51%;
+  flex-grow: 1;
+  text-align: center;
+
+}
+
+header div#contenedor-burger {
+  justify-content: center;
+  flex-basis: 51%;
+  flex-grow: 1;
+}
+
+header div div#burger-menu {
+  background-color: #1259c3;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  border-radius: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.home-banner {
+  width: 100%;
+  display: block;
+}
+
+main {
+  background-color: #ebebeb;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
   
 }
 
-.search-input{
-    width: 320px;
-    padding: 10px;
-    border: 1px solid #CCC;
-}
-.subtitulos{
-    font-size: 24px;
-    color: #302c2b;
-}
-.precios{
-    font-size: 18px;
-}
-.tamDescYDescrip{
-    font-size: 16px;
-    
-}
-i{
- 
-    color: black;
-}
-.logoMercado{
-    width: 50%;
+main section {
+   width: 90%;
+   margin: 0 auto;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px;
 }
 
-.imagenes{
-    width: 80%;   
+main section h2 {
+  flex-basis:51%;
+  flex-grow: 1;
+  font-size: 24px;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
 }
 
-.lista1, .lista2{
-    list-style: none;
-    display: none;
-    text-decoration: none;
-}
-.lista1 li a , .lista2 li a{
-   color : #222222;
-}
-.lista2 li a i {
-    color : #1259c3;
-}
-.hamburguesa{
-    text-align: center;  
-}
-.hamburguesa i {
-    
-    height: auto;
-    padding: 10px;
-    background-color: #1259c3;
-    border-radius: 10px;
-    text-align: center;
-    color: white;
-    box-sizing: border-box;
-}
-
-main{
-    width: 90%;
-    margin: 0 auto;
-}
-
-section{
-    margin-top: 10px;
-   
-}
-
-.articulos{
-    margin-top: 10px;
-    background-color:#ebebeb;
-    box-sizing: border-box;
-    border-radius: 10px;
-   
-   
-}
-
-.cajaPeque{
-    border-top: 1px solid #ebebeb;
-    padding:15px;
-    box-sizing: border-box;
-    text-align: center;
-    transition: 2s all;
-}
-.descrip{
-    display: none;
-}
-.truck{
-    width: 100%;
-
-    
-    box-sizing: border-box;
-    position: relative;
-    top: -20px;
-    transition: 1s all;
-   
-   
-}
-.truck i{
-    color: green;
-    font-size: 16px;
-    padding: 9px;
-    padding-top: 13px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    box-sizing: border-box;
-
-}
-.banner-container{
-    margin-top: 10px;
-    box-sizing: border-box;
-}
-.banner-container img{
-    width: 100%;
-
-}
-
-/* Footer */
-footer{
-    background-color: #ebebeb;
-    width: 100%;
-    margin: auto;
-}
-.contenedor-footer{
-    
-    margin-top: 10px;
-    box-sizing: border-box;
-}
-.contenedor-footer-hijo{
-    border-top: 1px solid #ebebeb;
-    padding:15px;
-    box-sizing: border-box;
-    text-align: center;
-    transition: 1s all;
-}
-.contenedor-footer-iconos i{
-    color: #1259c3; 
-}
-
-.contenedor-footer-hijo-copy {
-    font-size: 8px;
-}
-
-.detalleProducto{
-    display: flex;
-}
-.detalleProducto .precios{
-    flex-grow: 0.3;
-}
-.detalleProducto .descuento{
-    flex-grow: 0.7;
-   
-}
-.descuento{
-    color: #39b54a;
+main section article {
+  background-color: white;
+  flex-basis: 51%;
+  flex-grow: 1;
   
 }
 
-/* Registrar usuario estilos */
-.titulo{
-    text-align: center;
+main section article div.imagen-producto {
+justify-content: center;
+display: flex;
+padding: 5%;
 }
-.formu{
-    margin-top: 10px;
+
+main section article div img {
+  max-width: 75%;
+}
+
+main section article div.caja-detalles {
+  border-top: #ebebeb 1px solid;
+  padding: 15px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main section article i{
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #FFF;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+  color: #39b54a;
+}
+
+main section article i:hover {
+ transform:rotate(-90deg);
+ transition-duration: 2s;
+}
+
+main section article p.precio {
+  /* width: 30%; */
+  font-size: 18px;
+  flex-grow: 0.3;
+  flex-basis: 25%;
+}
+
+main section article p.descuento {
+  /* width: 70%; */
+  font-size: 16px;
+  color:  #39b54a;
+  flex-basis: 60%;
+  flex-grow: 0.7;   
+}
+
+main section article p.descripcion {
+  font-size: 16px;
+  display: none;
+}
+
+footer {
+  color:  #666;
+  padding-top: 2em;
+  padding-bottom: 0.5em;
+}
+
+footer section {
+  margin: 0 auto;
+  width: 90%;
   
-}
-.container-form-registro{
-    background-color: #ebebeb;
-    padding: 28px;
-    width: 50%;
-    margin: 0 auto;
-    box-shadow: #222222 0px 0px 10px;
-    border-radius: 20px;
-}
-.container-form-registro div{
-    margin-top: 20px;   
-}
-.container-form-registro  div .input-registro{
-    width: 90%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ebebeb;
-}
-.botones-registo{
-    display: flex;
-    gap: 10px;
-    
-    justify-content: center;
-}
-.boton-registro{
-    width: 100px;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ebebeb;
-    background-color: #1259c3;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 1s all;
-}
-.boton-registro:hover{
-    background-color: #0022AA;
-}
-
-/* Login */
-.formulario-login{
-    margin-top: 10px;
-}
-.container-form-login{
-    width: 50%;
-    margin: 0 auto;
-    padding: 28px;
-    box-shadow: #222222 0px 0px 10px;
-    border-radius: 20px;
-    background-color: #ebebeb;
-}
-.container-form-login div{
-    margin-top: 20px;   
-}
-.container-form-login  div .input-login{
-    width: 90%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ebebeb;
-}
-
-
-.botones-login{
-    display: flex;
-    justify-content: center;
-}
-.boton-login{
-    width: 200px;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ebebeb;
-    background-color: #1259c3;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    box-sizing: border-box;
-    transition: 1s all;
-}
-.boton-login:hover{
-    background-color: #0022AA;
-}
-
-
-#nombreProducto{
-    display: none;
-   
-}
-.articulos:hover #nombreProducto{
-    display: block;
-   
-}
-.articulos:hover {
-    
-    box-shadow: #222222 0px 0px 20px;
-    transform: scale(1.02);
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1em;
   
 }
 
-.articulos:hover .truck{
-    transform: scale(1.06) rotate(-90deg);
-
-
+footer section article {
+  text-align: center;
+  flex-basis: 51%;
+  flex-grow: 1;
+  padding-left: 2em;
+  padding-right: 2em;
 }
-.articulos:hover .truck i{ 
-   color: #1259c3;
-   border-radius: 50%;
-   border: 1px solid #1259c3;
-
-
-}
-.articulos:hover .descuento{
-    color: #1259c3;
+footer section article i {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #1259c3;
 }
 
-.contenedor-footer-hijo:hover {
-    transform: scale(1.08);
-}
-.contenedor-footer-hijo:hover .contenedor-footer-iconos i {
-    transform: scale(1.08);
-    color: #39b54a;
+footer section article i:hover {
+  color:#EAC926
 }
 
-.section-ajustes{
-    margin-top: 10px;
-    margin-bottom: 20px;
-   
-   
+footer section article h3 {
+  margin: 0px;
+  font-size: 12px;
+}
+
+footer section article p {
+  margin: 0px;
+  font-size: 12px;
+}
+
+footer section p {
+  flex-basis: 51%;
+  flex-grow: 1;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/* Estilos formulario login */
+
+main form#formulario-login {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding-top:2em;
+  padding-bottom: 2em;
+  padding-right: 5vw;
+  padding-left: 5vw;
+  row-gap: 1em;
+  
+}
+
+main form#formulario-login input {
+  flex-grow: 1;
+  flex-basis: 51%;
+  height: 2em;
+  border-style: none;
+  text-align: center;
+  border-radius: 0.25em;
+  
+}
+
+main form#formulario-login input[type="submit"] {
+  flex-basis: 51%;
+  flex-grow: 1;
+  height: 2em;
+  border-style: solid;
+  border-width: 1px;
+  border-color:#0022AA;
+  color: #0022AA;
+  background-color: white;
+  font-weight: bold;
+}
+
+main form#formulario-login input[type="submit"]:hover {
+ background-color: #0022AA;
+ color: white;
+}
+/* Estilos formulario registro */
+
+main form#formulario-registro {
+
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding-top:2em;
+  padding-bottom: 2em;
+  padding-right: 5vw;
+  padding-left: 5vw;
+  row-gap: 1em;
+}
+main form#formulario-registro input {
+  flex-grow: 1;
+  flex-basis: 51%;
+  height: 2em;
+  border-style: none;
+  text-align: center;
+  border-radius: 0.25em;
+  
+} 
+
+main form#formulario-registro div#tipoperfil {
+  flex-basis: 51%;
+  flex-grow: 1;
+  margin-bottom: 1em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main form#formulario-registro div#tipoperfil h4 {
+  flex-basis: 51%;
+  flex-grow: 1;
+  margin-bottom: 0.5em;
+  
+}
+main form#formulario-registro div#tipoperfil div#perfiles {
+  flex-basis: 51%;
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+main form#formulario-registro div#tipoperfil div#perfiles div.perfil{
+  display: flex;
+  align-items: center;
+}
+
+main form#formulario-registro div#tipoperfil div#perfiles div.perfil label{
+  margin-left: 0.25em;
+}
+
+main form#formulario-registro div#categoriasinteres {
+  flex-basis: 51%;
+  flex-grow: 1;
+  margin-bottom: 1em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main form#formulario-registro div#categoriasinteres h4 {
+  flex-basis: 51%;
+  flex-grow: 1;
+  margin-bottom: 0.5em;
+  
+}
+main form#formulario-registro div#categoriasinteres div#intereses {
+  flex-basis: 51%;
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main form#formulario-registro div#categoriasinteres div#intereses div.interes {
+  display: flex;
+  align-items: center;
+  flex-basis: 26%;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+main form#formulario-registro div#categoriasinteres div#intereses div.interes input[type="checkbox"] {
+  flex-grow: initial;
+  flex-basis: initial;
+}
+
+main form#formulario-registro div#categoriasinteres div#intereses div.interes label{
+  margin-left: 0.25em;
+  white-space: nowrap;
+}
+
+main form#formulario-registro div#fotoperfil {
+  flex-basis: 51%;
+  flex-grow: 1;
+}
+
+main form#formulario-registro div#passwords {
+  flex-basis: 51%;
+  flex-grow: 1;
+  display: flex;
+  column-gap: 2em;
+  flex-wrap: wrap;
+  row-gap: 1em;
+}
+
+main form#formulario-registro div#passwords input {
+  flex-grow: 1;
+  flex-basis: 34%;
+}
+
+main form#formulario-registro button {
+  flex-basis: 51%;
+  flex-grow: 1;
+  height: 2em;
+  border-style: solid;
+  border-width: 1px;
+  border-color:#0022AA;
+  color: #0022AA;
+  background-color: white;
+  font-weight: bold;
+}
+
+main form#formulario-registro button:hover {
+  background-color: #0022AA;
+ color: white;
 }
 
 
-@media (min-width: 376px) {
-    .descrip{
-        display: block;
-    }
-    .lista1, .lista2{
-        
-        display: block;
-    }
-    .articulos{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        transition: 2s all;
-    }
-    .hamburguesa{
-        display: none;
-    }
- 
+/* media para tablet*/
+@media (min-width: 361px){
+
+  header div#header-logo {
+      flex-basis: 25%;
+  }
+
+  header form{
+      flex-basis: 25%;
+  }
+  
+  header div#cuotas{
+      flex-basis: 25%;
+  }
+
+  main section h2 {
+      flex-basis: 90%;
+      flex-grow: 1;
+  }
+
+
+      
+  main section article {
+      flex-basis: 34%;
+      flex-grow: 1;
+  }
+
+  main section article:hover {
+      box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 ); 
+  } 
+
+  main section article p.descripcion {
+      display: block;
+      flex-grow: 1;
+      flex-basis: 51%;
+  }
+
+  
+
 }
-@media (min-width: 768px) {
-    .logoMercado{
-        width: 35%;
-    }
-    .header-top-bar{
-        display : flex ;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap:wrap;
-    }
-    .header-top-compra{
-        max-width: 350px;
-        transition: 1s all;
-
-    }
-    .header-top-compra i {
-        color: #1259c3;
-        
-    }
-    .header-top-compra:hover  {
-        transform: scale(1.02);
-    }
-
-    .header-bottom-bar{
-        display : flex ;
-        align-items: center;
-        justify-content: space-between;
-       
-    }
-    .lista1, .lista2{
-        
-        display: flex;
-        justify-content: space-between;
-        
-
-    }
-    .lista1 li, .lista2 li{
-       transition: 1s all;
-    }
-    .lista2 li:hover , .lista1 li:hover{
-        transform: scale(1.08);
-    }
-
-    }
-     .header-bottom-bar ul li{
-        margin: 0 15px;
-    }
-    .section-visita > .articulos,.section-ofertas > .articulos{
-        flex: 40%;
-    }
-    .section-visita,.section-ofertas{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 25px;
-
-    }
 
 
+/*media para desktop*/
+@media (min-width: 769px){
 
-@media (min-width: 1100px){
+  header{
+      padding-bottom: 0px;
+  }
 
-    .section-visita > .articulos,.section-ofertas > .articulos{
-        flex: 1 0 21%;
-    }
-    .section-visita,.section-ofertas{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
+  header div#header-logo {
+      flex-basis: 15%;
+  }
 
-    }
-    .truck{
-        right: -90px;
-        box-sizing: border-box;
-    }
-    footer{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        border-top: 1px solid #ebebeb;
-        margin-top: 20px;
-    }
-    .contenedor-footer-hijo{
-        border: none;
-    }
+  nav {
+      padding-top: 15px;
+      padding-bottom: 5px;
+      padding-left: 5vw;
+      padding-right: 5vw;
+      font-size: 1.3em;
+
+  }
+
+  header form{
+      flex-basis: 60%;
+  }
+  
+  header div#cuotas{
+      flex-basis: 15%;
+  }
+
+  main section article {
+      flex-basis: 20%;
+      flex-grow: 0.25;
+  }
+  footer section article {
+      flex-basis: 26%;
+      flex-grow: 1;
+  }
+  main form#formulario-login {
+      padding-right: 25vw;
+      padding-left: 25vw;
+  }
+  main form#formulario-registro {
+      padding-right: 25vw;
+      padding-left: 25vw;
+  }
+  
+  header div#contenedor-burger {
+      display: none;
+  }    
+  
+  header nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      flex-grow: 1;
+  }
+
+  header nav ul {
+      display: inline-flex;
+      column-gap: 0.5em;
+  }
+
+  main section article p.descripcion {
+      visibility: hidden;
+  }
+
+  main section article:hover p.descripcion {
+      visibility: visible;
+  }
+
+  main form#formulario-registro div#categoriasinteres div#intereses div.interes {
+      display: flex;
+      align-items: center;
+      flex-basis: 15%;
+      flex-grow: 1;
+      justify-content: center;
+  }
 }

@@ -1,23 +1,15 @@
 {
-  "name": "estructuramercadolibrepractica",
+  "name": "mercadoliebre",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
-    
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kennethLeonel/EstructuraMercadoLibrePractica.git"
+    "start": "node app.js",
+    "test": "nodemon app.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Andrea Carello",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kennethLeonel/EstructuraMercadoLibrePractica/issues"
-  },
-  "homepage": "https://github.com/kennethLeonel/EstructuraMercadoLibrePractica#readme",
   "dependencies": {
     "express": "^4.18.1",
     "nodemon": "^2.0.19"

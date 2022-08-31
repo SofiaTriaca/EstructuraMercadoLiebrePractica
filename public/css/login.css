@@ -1,0 +1,4 @@
+.login input[type='submit']:hover,
+.register input[type='submit']:hover{
+    background-color: #0022AA;
+}
