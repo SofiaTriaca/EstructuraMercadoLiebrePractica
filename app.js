@@ -30,5 +30,5 @@ app.post("/login", (req,res)=>{
 });
 
 app.listen(process.env.PORT || 3000, () => {
-    console.log("Servidor corriendo")
+    console.log("Servidor corriendo en el puerto 3000")
 });
