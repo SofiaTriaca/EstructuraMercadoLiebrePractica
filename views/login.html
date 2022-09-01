@@ -19,6 +19,12 @@
         <div id="header-logo">
             <img id="logo-mercado-liebre" src="images/logo-mercado-liebre.svg">
         </div>
+        <script>
+            contenedor = document.getElementById("header-logo")
+            contenedor.addEventListener('click', function(event) {
+              window.open('/')
+            });
+        </script>
         <form action="#" method="GET">
             <input type="text" name="busqueda" placeholder="Buscar...">
             <button type="submit"><i class="fas fa-search"></i></button>
